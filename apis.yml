@@ -1,8 +1,17 @@
 aid: yubi
 name: Yubi
-description: Yubi is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Yubi (formerly CredAvenue) is an Indian debt and credit technology company
+  operating a full-stack digital marketplace that connects enterprises, lenders,
+  and investors across India's credit ecosystem. Its product suite spans Yubi
+  Loans for corporate borrowing, Yubi Co.Lend for bank/NBFC co-lending
+  partnerships with one-time API integration, Yubi Pools for securitisation and
+  ABS deal-making, Yubi Invest for fixed-income and debt investing, and Yubi
+  Flow for supply-chain financing. Founded in 2020 and headquartered in Chennai,
+  the company reached unicorn status in 2022 and exposes self-serve APIs for
+  co-lending and loan-origination data exchange through its developer portal at
+  developer.go-yubi.com. This profile was seeded from the Lightspeed Venture
+  Partners portfolio and enriched from Yubi's public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/yubi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +19,61 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fintech
+- Lending
+- Credit
+- Debt Markets
+- Co-Lending
+- Securitisation
+- Supply Chain Finance
+- Financial Services
+- India
+image: https://www.go-yubi.com/favicon.svg
 apis: []
+common:
+- type: TrustCenter
+  url: security/yubi-trust-center.yml
+- type: DomainSecurity
+  url: security/yubi-domain-security.yml
+- type: Website
+  url: https://www.go-yubi.com/
+- type: DeveloperPortal
+  url: https://developer.go-yubi.com/
+- type: Blog
+  url: https://www.go-yubi.com/blog/
+- type: About
+  url: https://www.go-yubi.com/about
+- type: TermsOfService
+  url: https://www.go-yubi.com/terms
+- type: PrivacyPolicy
+  url: https://www.go-yubi.com/privacy-policy
+- type: Compliance
+  url: https://trust.go-yubi.com/
+- type: LLMsTxt
+  url: llms/yubi-llms.txt
+- type: LinkedIn
+  url: https://www.linkedin.com/company/go-yubi/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

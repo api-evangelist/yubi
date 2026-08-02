@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of Yubi hosts
+note: >-
+  Probed the /.well-known/ discovery surface on all reachable Yubi hosts. No
+  real discovery documents are published: go-yubi.com returns 404 for every
+  path, and developer.go-yubi.com returns the Theneo SPA shell (soft-200 HTML,
+  not a document) for every /.well-known/ path. No pointer emitted since no
+  genuine catalog/security.txt/OIDC document was found.
+hosts:
+- host: https://www.go-yubi.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://developer.go-yubi.com
+  documents:
+  - {path: /.well-known/security.txt, status: 200, note: SPA shell (not a document)}
+  - {path: /.well-known/openid-configuration, status: 200, note: SPA shell (not a document)}
+  - {path: /.well-known/oauth-authorization-server, status: 200, note: SPA shell (not a document)}
+  - {path: /.well-known/api-catalog, status: 200, note: SPA shell (not a document)}
+  - {path: /.well-known/ai-plugin.json, status: 200, note: SPA shell (not a document)}
